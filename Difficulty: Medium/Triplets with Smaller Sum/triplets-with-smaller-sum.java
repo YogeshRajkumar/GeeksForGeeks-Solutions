@@ -8,10 +8,14 @@ class Solution {
             int r=arr.length-1;
             while(l<r){
                 int sum=arr[i]+arr[l]+arr[r];
-                if(target>sum){
-                    count+=r-l;
-                }
+                // if(target>sum){
+                //     count+=r-l;
+                // }
+                // if(sum<target){
+                //     l++;
+                // }
                 if(sum<target){
+                    count+=r-l;
                     l++;
                 }
                 else{
